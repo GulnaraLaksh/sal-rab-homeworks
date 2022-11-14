@@ -29,12 +29,14 @@ function calcDiscount(sum, min, discount) {
     let discountSum; // создайте переменную discountSum
 
     if (productsSum >= discountMinSum) {
-        discountSum = productsSum / 100 * discountPart; // если productsSum больше или равно discountMinSum, то присвойте discountSum значение discountPart процентов от productsSum,
-    }else discountSum = 0;}  // иначе присвойте discountSum значение 0
+        discountSum = (productsSum / 100 * discountPart); // если productsSum больше или равно discountMinSum, то присвойте discountSum значение discountPart процентов от productsSum,
+    } else { discountSum = 0;
+    }  // иначе присвойте discountSum значение 0
 
     // Конец решения задания №2.2.
 
     return discountSum;
+}
 
 
 function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shippingPrice}) {
